@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+}
+
+header {
+    background: lightseagreen;
+    text-align: center;
+    height: 120px;
+    display: flex;
+}
+
+#presentacion {
+    display: flex;
+    gap: 15px;
+}
+
+#pfp {
+    border-radius: 50%;
+}
+
+header nav a {
+    background-color: violet;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+}
+
+.cuerpo1 {
+    background: lightskyblue;
+    text-align: center;
+    width: 80%;
+    height: 150px;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px auto;
+}
+
+.cuerpo2 {
+    background: lightskyblue;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    width: 80%;
+    height: 200px;
+    margin: 20px auto;
+}
+
+.cuerpo2 ol {
+    list-style-position: inside;
+    padding-left: 0; 
+    text-align: left; 
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.cuerpo2 ul {
+    list-style-position: inside;
+    padding-left: 0; 
+    text-align: left; 
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.cuerpo3 {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #000000;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+footer {
+    background-color: rgb(193, 103, 238);
+    display: flex;
+    padding: 20px;
+}
