@@ -1,0 +1,87 @@
+*{
+    padding: 3px;
+    margin:0px;
+}
+#cabecera{
+    text-align: center;
+    background-color: rgb(65, 184, 220);
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    line-height: 1.75em;
+    height:100%;
+    width: 100%;
+    
+}
+p{
+
+    font-style: italic;
+}
+nav{ 
+    display: flex;
+    background-color: rgb(65, 184, 220);
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav a:hover{
+    color:red;
+    background-color: rgb(48, 132, 158);
+    border-radius: 10px;
+}
+
+
+#empresa{
+    background-color:#94c8d8;
+    border-top: 1px solid black;
+    
+}
+
+h1{
+    font-weight: bold;
+}
+
+h2{
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: rgb(55, 65, 54);
+}
+
+h3{
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: rgb(115, 138, 137);
+}
+
+.destacado{
+    text-decoration: underline;
+    font-weight: bold;
+    color:red;
+}
+
+#servicios{
+    background-color: #94c8d8;
+    border-top: 1px solid black;
+}
+
+#contacto{
+    background-color: #94c8d8;
+    border-top: 1px solid black;
+}
+footer{
+    background-color: #a2b8c0;
+}
+
+#contacto a{
+    border:  1px solid black;
+    text-decoration: none;
+    color: lightgreen;
+    background-color: gray;
+}
