@@ -1,0 +1,85 @@
+*{
+    padding: 0px;
+    margin:0px;
+}
+body{
+    font-family: sans-serif;
+    font-style: italic;
+    background-color: #e6dddd;
+}
+#cabecera{
+    text-align: center;
+    background-color: rgb(35, 43, 160);
+    color:aliceblue;
+}
+#cabecera h1{
+    padding: 7px;
+    margin: 3px;
+}
+#cabecera p{
+    padding-bottom: 2%;
+}
+nav{
+    background-color: rgb(53, 65, 238);
+    padding-top: 1.7%;
+    justify-content: center;
+    padding-bottom: 1.7%;
+    word-spacing: 4em;
+}
+nav a{
+    color: aliceblue;
+    text-decoration: none;
+    padding:4px;
+}
+nav a:hover{
+    color:rgb(219, 48, 71);
+    text-decoration: none;
+    background-color: rgb(17, 25, 131);;
+    border-radius: 10px;
+}
+main{
+    width: 80%;
+    margin: 2rem auto;
+}
+#productos{
+    background-color: rgb(255, 255, 255);
+    line-height: 1.5rem;
+    border-radius: 10px;
+    padding-bottom: 5px;
+}
+#productos h2{
+    padding: 1.7rem;
+    border-bottom: 3px solid lightseagreen;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.producto{
+    padding: 1.5rem;
+    word-spacing: 2px;
+    background-color: rgb(31, 202, 245);
+    margin: 20px;
+    border-radius: 10px;
+}
+.producto h3 {
+    border-bottom: 3px solid rgb(10, 126, 120);
+}
+.producto a{
+    text-decoration: none;
+    padding:3px;
+}
+.producto a:hover{
+    color:rgb(238, 19, 48);
+    text-decoration: none;
+    background-color: rgb(10, 168, 207);
+    border-radius: 10px;
+}
+.producto.oferta{
+    background-color: rgb(7, 106, 255);
+}
+.producto.oferta a:hover{
+    background-color: rgb(5, 78, 187);
+}
+.categoria{
+    text-decoration: underline;
+    font-weight: bold;
+}
