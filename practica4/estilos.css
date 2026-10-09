@@ -36,6 +36,7 @@ nav a:hover{
     text-decoration: none;
     background-color: rgb(17, 25, 131);;
     border-radius: 10px;
+    box-shadow: 5px 5px 20px rgb(142, 148, 226);;
 }
 main{
     width: 80%;
@@ -46,6 +47,7 @@ main{
     line-height: 1.5rem;
     border-radius: 10px;
     padding-bottom: 5px;
+    border:3px solid lightseagreen;
 }
 #productos h2{
     padding: 1.7rem;
@@ -56,9 +58,13 @@ main{
 .producto{
     padding: 1.5rem;
     word-spacing: 2px;
-    background-color: rgb(31, 202, 245);
+    background-color: rgb(118, 218, 243);
     margin: 20px;
     border-radius: 10px;
+}
+.producto:hover{
+    box-shadow: 5px 5px 20px black;
+    transform: scale(1.02);
 }
 .producto h3 {
     border-bottom: 3px solid rgb(10, 126, 120);
@@ -74,12 +80,138 @@ main{
     border-radius: 10px;
 }
 .producto.oferta{
-    background-color: rgb(7, 106, 255);
+    background-color: rgb(117, 170, 250);
 }
 .producto.oferta a:hover{
     background-color: rgb(5, 78, 187);
 }
+.precio::before{
+    content:"► ";
+    font-size: 20px;
+    color: red;
+
+}
 .categoria{
     text-decoration: underline;
     font-weight: bold;
+}
+#ofertas{
+    margin-top: 20px;
+    /*ejemplo de herencia*/
+    color:rgb(97, 83, 83);
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    line-height: 1.5rem;
+    border-radius: 10px;
+    border:3px solid lightseagreen;
+    background-color: rgb(238, 250, 215);
+}
+#ofertas h2{
+    padding:10px;
+    margin-bottom: 10px;
+    border-bottom: 3px solid lightseagreen;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-decoration: underline;
+}
+#servicios{
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    line-height: 1.5rem;
+    border-radius: 10px;
+    border:3px solid lightseagreen;
+    background-color: rgb(255, 229, 194);
+}
+#servicios h2{
+    padding:10px;
+    margin-bottom: 10px;
+    border-bottom: 3px solid lightseagreen;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-decoration: underline;
+}
+ul{
+    list-style: none;
+}
+li:nth-child(even){
+    background-color: rgb(132, 230, 230);
+    border-left: 2px solid blue;
+    border-radius: 5px;
+}
+li:first-child{
+    text-decoration: underline;
+    font-weight: bold;
+    color:red;
+}
+li:last-child{
+    color:rgb(224, 26, 224);
+}
+#contacto{
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    line-height: 1.5rem;
+    border-radius: 10px;
+    border:3px solid lightseagreen;
+    background-color: rgb(255, 229, 194);
+}
+#contacto h2{
+    padding:10px;
+    margin-bottom: 10px;
+    border-bottom: 3px solid lightseagreen;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-decoration: underline;
+}
+#contacto h2::after{
+    content: "\1F4DE";
+    font-size: medium;
+    display: inline-block;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+label{
+    font-size: 20px;
+    text-decoration: underline;
+    padding-bottom: 5px;
+}
+input{
+    margin-bottom: 10px;
+}
+/*input[type="text"]{
+
+}*/
+button{
+    padding: 15px;
+    width: 30%;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: large;
+    background-color: rgb(255, 184, 184);
+}
+button:active{
+    background-color: rgb(151, 59, 59);
+}
+footer{
+    text-align: center;
+    background-color: rgb(35, 43, 160);
+    color:aliceblue;
+    font-weight: bold;
+    padding: 20px;
+    line-height: 40px;
+}
+footer a{
+    text-decoration: none;
+    color:aliceblue;
+    margin:auto 30px;
+    padding:10px;
+}
+footer a:hover{
+    background-color: rgb(103, 110, 202);
+    border-radius: 10px;
+    color:red;
 }
