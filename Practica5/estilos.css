@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    justify-content: center;
+    width: 20px auto;
+}
+
+body {
+    background-color: rgb(209, 204, 204);
+}
+header {
+    display: flex;
+    background-color: rgb(8, 97, 55);
+    flex-direction: row;
+    color: rgb(255, 255, 255);
+    line-height: 500%;
+    justify-content: center;
+    gap: 1.4em; 
+    align-items: center;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+nav a {
+    color: rgb(238, 223, 201);
+    padding:1.01em;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: rgb(8, 58, 35);
+    color: rgb(255, 146, 127);
+    border-radius: 10px;
+}
+
+main{
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.presentacion {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin: 60px auto;
+    border-radius: 20px;
+    gap: 5em;
+    padding: 1.5%;
+    background-color: rgb(255, 255, 255);
+}
+
+.presentacion div {
+    padding: 2.5em;
+}
+
+.presentacion img {
+    width: 50%;
+    height: 50%;
+    border-radius: 20px;
+}
+
+.texto {
+    line-height: 400%;
+}
+
+h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.7rem;
+    text-decoration: 2px solid underline rgb(255, 136, 0) ;
+}
+
+.texto p {
+    line-height: 200%;
+}
+
+#servicios {
+    width: 60em;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    margin: 3.5% auto;
+    border-radius: 20px;
+    padding: 3.5%;
+}
+
+#servicios h2 {
+    line-height: 200%;
+    text-decoration: none;
+    border-bottom: 3px solid orangered;
+    margin-bottom: 1.02em;
+}
+
+.contenedor-servicios {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1% auto;
+    gap: 5%;
+    padding: 2.5%;
+}
+
+.servicio {
+    width: 20em;
+    height: 10em;
+    color: azure;
+    border-left: 5px solid rgb(72, 155, 4);
+    background-color: rgb(69, 69, 153);
+    border-radius: 20px;
+    margin: 3.5%;
+    padding: 3.5%;
+    
+}
+.servicio:hover{
+    transform: rotate(5deg) scale(1.1);
+}
+
+#proyectos {
+    width: 80em;
+    justify-content: center;
+    align-items: center;
+    margin: 2px auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 4.5%;
+}
+
+.contenedor-proyectos {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 5%;
+}
+
+.proyecto {
+    position: relative;
+    width: 250px;
+    height: 200px;
+    background-color: rgb(179, 228, 134);
+    border-left: 4px solid rgb(138, 30, 30);
+    border-radius: 20px;
+    margin: 3.5% auto;
+    padding: 15%;
+}
+
+.proyecto:hover{
+    transform: rotate(5deg) scale(1.1);
+}
+
+#proyectos h2 {
+    line-height: 200%;
+    text-decoration: none;
+    border-bottom: 3px solid orangered;
+    margin-bottom: 1.02em;
+}
+
+.etiqueta {
+    position: absolute;
+    background-color: rgb(219, 148, 122);
+    border-radius: 10px;
+    top:20px;
+    right:20px;
+    padding: 5px 10px; 
+}
+
+#equipo {
+    width: 80em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 4.5%;
+    margin: 30px auto;
+}
+
+.contenedor-equipo {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 10%;
+}
+
+.miembro {
+    width: 16rem;
+    height: 200px;
+    background-color: rgb(85, 85, 85);
+    border-left:4px solid rgb(177, 14, 14) ;
+    border-radius: 20px;
+    margin: 5% auto;
+    color: azure;
+    padding: 10%;
+    text-align: center;
+}
+
+.miembro img {
+    width: 65%;
+    height: 90%;
+    border-radius: 30px;
+}
+
+.contacto {
+    display: flex;
+    width: 65em;
+    height: 20rem;
+    flex-direction: row;
+    margin: auto;
+    background-color: rgb(84, 105, 98);
+    border-radius: 20px;
+    color: aliceblue;
+}
+
+.datos-contacto {
+    padding: 20px;
+    width: 50%;
+    line-height: 60px;
+}
+
+.datos-contacto h2::after {
+    content: " \1F4DE";
+}
+
+.datos-contacto p {
+    line-height: 30px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 40%;
+    line-height: 30px;
+}
+
+strong {
+    color: rgb(47, 255, 193);
+}
+
+textarea {
+    height: 15%;
+}
+
+button {
+    margin: 20px;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    border-color: white;
+}
+
+button:hover {
+    background-color: rgb(11, 57, 209);
+    border: 3px solid rgb(3, 41, 97);
+    color: white;
+}
+button:active{
+    background-color: rgb(7, 30, 105);
+    border: 3px solid rgb(3, 41, 97);
+}
+
+.ayuda {
+    background: rgb(17, 73, 5);
+    border: 5px solid white;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 25px;
+    position: fixed;
+    right: 0;
+    bottom: 10px;
+    text-decoration: none;
+}
+.ayuda:hover{
+    background:linear-gradient( rgb(17, 73, 5),rgb(42, 201, 90));
+}
+
+footer {
+    line-height: 50px;
+    background-color: rgb(6, 75, 43);
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    padding:10px;
+    margin: 20px auto;
+}
+
+footer a:hover {
+    color: rgb(255, 141, 47);
+    background-color: rgb(5, 43, 25);
+    border-radius: 20px;
+}

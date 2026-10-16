@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaWeb Studio</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>NovaWeb Studio</h1>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#equipo">Equipo</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio" class="presentacion">
+            <img src="img/estudio.jpg" alt="Equipo de NovaWeb Studio trabajando">
+            <div class="texto">
+                <h2>Diseñamos experiencias digitales</h2>
+                <p>En NovaWeb Studio desarrollamos soluciones digitales para empresas y profesionales que
+                    quieren mejorar su presencia y sus procesos en Internet.</p>
+                <p>Combinamos diseño, desarrollo y tecnología para crear proyectos claros, funcionales y
+                    atractivos.</p>
+            </div>
+        </section>
+        <section id="servicios">
+            <h2>Nuestros servicios</h2>
+            <p class="introduccion-servicios">Soluciones digitales para ayudar a empresas y profesionales a
+                mejorar su presencia y sus procesos tecnológicos.</p>
+            <div class="contenedor-servicios">
+                <article class="servicio">
+                    <h3>Diseño web</h3>
+                    <p>Creación de sitios web modernos, claros y adaptados a las necesidades de cada
+                        proyecto.</p>
+                </article>
+                <article class="servicio">
+                    <h3>Desarrollo de aplicaciones</h3>
+                    <p>Desarrollo de aplicaciones web orientadas a la gestión y automatización de
+                        procesos.</p>
+                </article>
+                <article class="servicio">
+                    <h3>Comercio electrónico</h3>
+                    <p>Creación y configuración de tiendas online para la venta de productos y servicios.</p>
+                </article>
+                <article class="servicio">
+                    <h3>Diseño de interfaces</h3>
+                    <p>Diseño de interfaces sencillas, coherentes y centradas en facilitar la experiencia del
+                        usuario.</p>
+                </article>
+                <article class="servicio">
+                    <h3>Mantenimiento web</h3>
+                    <p>Actualización de contenidos, resolución de incidencias y mantenimiento de sitios
+                        web.</p>
+                </article>
+                <article class="servicio">
+                    <h3>Consultoría tecnológica</h3>
+                    <p>Asesoramiento para seleccionar e implantar soluciones tecnológicas adecuadas para cada
+                        empresa.</p>
+                </article>
+            </div>
+        </section>
+        <section id="proyectos">
+            <h2>Proyectos recientes</h2>
+            <div class="contenedor-proyectos">
+                <article class="proyecto">
+                    <span class="etiqueta">Web</span>
+                    <h3>Clínica Dental Nova</h3>
+                    <p>Diseño y desarrollo del nuevo sitio web corporativo para una clínica dental.</p>
+                </article>
+                <article class="proyecto">
+                    <span class="etiqueta">E-commerce</span>
+                    <h3>Urban Shop</h3>
+                    <p>Tienda online especializada en productos de moda urbana y complementos.</p>
+                </article>
+                <article class="proyecto">
+                    <span class="etiqueta">App</span>
+                    <h3>TaskFlow</h3>
+                    <p>Aplicación web para organizar proyectos, tareas y equipos de trabajo.</p>
+                </article>
+                <article class="proyecto">
+                    <span class="etiqueta">Web</span>
+                    <h3>GreenHome</h3>
+                    <p>Portal corporativo para una empresa especializada en soluciones de eficiencia
+                        energética.</p>
+                </article>
+                <article class="proyecto">
+                    <span class="etiqueta">Diseño</span>
+                    <h3>FitLife</h3>
+                    <p>Diseño de la interfaz de una plataforma de entrenamiento y seguimiento deportivo.</p>
+                </article>
+                <article class="proyecto">
+                    <span class="etiqueta">App</span>
+                    <h3>ReservaFácil</h3>
+                    <p>Aplicación web para gestionar reservas y citas de pequeños negocios.</p>
+                </article>
+            </div>
+        </section>
+        <section id="equipo">
+            <h2>Nuestro equipo</h2>
+            <div class="contenedor-equipo">
+                <article class="miembro">
+                    <img src="img/laura.jpg" alt="Laura Martín">
+                    <h3>Laura Martín</h3>
+                    <p>Diseño UX/UI</p>
+                </article>
+                <article class="miembro">
+                    <img src="img/daniel.jpg" alt="Daniel Gómez">
+                    <h3>Daniel Gómez</h3>
+                    <p>Desarrollo Frontend</p>
+                </article>
+                <article class="miembro">
+                    <img src="img/sara.jpg" alt="Sara López">
+                    <h3>Sara López</h3>
+                    <p>Desarrollo Backend</p>
+                </article>
+            </div>
+        </section>
+        <section id="contacto" class="contacto">
+            <div class="datos-contacto">
+                <h2>Hablemos</h2>
+                <p>¿Tienes un proyecto en mente? Cuéntanos qué necesitas y estudiaremos la mejor solución.</p>
+                <p><strong>Teléfono:</strong> 926 000 000</p>
+                <p><strong>Email:</strong> hola@novaweb.es</p>
+                <p><strong>Horario:</strong> Lunes a viernes, 9:00-18:00</p>
+            </div>
+            <form class="formulario">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" required>
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" required>
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" required></textarea>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+    <a href="#contacto" class="ayuda">¿Hablamos?</a>
+    <footer>
+        <p>NovaWeb Studio · Diseño y desarrollo digital</p>
+        <p>
+            <a href="#">Aviso legal</a>
+            <a href="#">Privacidad</a>
+        </p>
+    </footer>
+</body>
+
+</html>
