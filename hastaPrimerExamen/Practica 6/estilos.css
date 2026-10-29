@@ -1,0 +1,299 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #263238;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    background-color: #172a3a;
+    color: white;
+    padding: 20px;
+    flex-direction: row;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+.logo p {
+    margin: 0;
+    color: #a8c5da;
+}
+
+.menu {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    background-color: #24475e;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.presentacion {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.presentacion h2 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #087ea4;
+    padding: 12px;
+    margin: 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.fecha {
+    color: #087ea4;
+    font-weight: bold;
+}
+
+.programa {
+    margin: 40px;
+}
+
+.tarjetas {
+    display: grid;
+    position: static;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.tarjeta {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border-top: solid 4px #087ea4;
+}
+
+.hora {
+    font-weight: bold;
+    color: #087ea4;
+}
+
+.informacion {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.informacion div {
+    background-color: #172a3a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    margin: 40px;
+    padding: 20px;
+    background-color: #172a3a;
+    text-align: center;
+    color: white;
+}
+
+@media (700px<=width<1000px) {
+    .contenedor {
+        width: 94%;
+        
+    }
+
+    header {
+        flex-wrap: wrap;
+        background-color: #294c60;
+        
+    }
+
+    .menu {
+        gap: 6px;
+        margin-left: auto;
+
+    }
+
+    .menu a {
+        color: white;
+        background-color: #3b6f88;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .presentacion {
+        display: grid;
+        grid-template-columns: 2fr;
+        background-color: #eef6fa;
+        padding: 20px;
+    }
+
+    .presentacion h2 {
+        font-size: 2.3rem;
+        color: #174f68;
+    }
+
+    .tarjetas {
+        display: grid;
+        position: static;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tarjeta {
+        background-color: #f7fbfd;
+        border-top: solid, 4px, #3b82a0;
+    }
+
+    .informacion {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .informacion div {
+        background-color: #294c60;
+    }
+}
+
+@media(width<700px) {
+    .contenedor {
+        width: 94%;
+        background-color: #fff4e6;
+        color: #3d2b1f;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 18px;
+        background-color: #7a3e21;
+        width: 100%;
+    }
+
+    .menu {
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .menu a {
+        background-color: #a85d32;
+    }
+
+    .presentacion {
+        grid-template-columns: 1fr;
+        flex-direction: column-reverse;
+        background-color: #fffaf4;
+    }
+
+    .boton {
+        display: block;
+        margin: 0;
+        width: 100%;
+        background-color: #c65f28;
+        text-align: center;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr;
+        background-color: #fff8ef;
+        border-top: #c65f28;
+    }
+
+    .informacion {
+        flex-direction: column;
+    }
+
+    .informacion div {
+        background-color: #7a3e21;
+    }
+
+    .programa .informacion {
+        margin-top: 25px;
+    }
+
+    footer {
+        padding: 15px;
+        background-color: #7a3e21;
+        color: #fff7ed;
+    }
+}
+
+@media (orientation: landscape) {
+
+    .presentacion {
+        border-left: 8px solid #087ea4;
+    }
+
+    img {
+        max-height: 260px;
+        width: auto;
+    }
+}
+
+@media print {
+
+    .menu {
+        display: none;
+    }
+
+    .boton {
+        display: none;
+    }
+
+    img {
+        display: none;
+    }
+
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    .header,
+    .informacion,
+    footer {
+        background-color: white;
+        color: black;
+    }
+
+    .presentacion {
+        grid-template-columns: 1fr;
+    }
+    .tarjetas{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .tarjeta{
+        background-color: white;
+        border-radius: 0px;
+        border: 1px solid black;
+        border-left: 0;
+    }
+}
