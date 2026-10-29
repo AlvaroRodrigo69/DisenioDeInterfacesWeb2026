@@ -1,0 +1,138 @@
+$fondo: #101321;
+$superficie: #1d2235;
+$texto: #f7f7fb;
+$acento: #d7ff4b;
+$secundario: #ff6b91;
+$espacio: 8px;
+$radio: 16px;
+$ancho: 1100px;
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: $fondo;
+    color: $texto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: $ancho;
+    margin: auto;
+}
+
+.cabecera{
+    background-color: $superficie;
+    padding:$espacio*2;
+    .cabecera__interior{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.logo{
+    text-decoration: none;
+    color: $texto;
+    font-weight: bold;
+    font-size: 24px;
+    span{
+        color: $acento;
+    }
+}
+
+.menu{
+    display: flex;
+    gap: $espacio*3;
+
+    a{
+        color: white;
+        text-decoration: none;
+        &:hover{
+            color:$acento;
+        }
+    }
+}
+
+.portada{
+    background: linear-gradient(135deg, $superficie, $fondo);
+    padding: $espacio*10 0;
+    min-height: 420px;
+    h1{
+        font-size: 64px;
+        margin: 20px 0;
+        span{
+            color: $acento;
+        }
+    }
+    .portada__fecha{
+        color: $secundario;
+        font-weight: bold;
+    }
+
+}
+
+.boton{
+    display: inline-block;
+    padding: $espacio*2 $espacio*3;
+    border-radius: $radio;
+    background-color: $acento;
+    color: $fondo;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.seccion{
+    padding: $espacio*7 0;
+}
+
+.pie{
+    background-color: $superficie;
+    text-align: center;
+    padding: $espacio*3;
+}
+
+.seccion h2{
+    margin-top: 0
+}
+
+.artistas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $espacio * 3;
+}
+
+.artista{
+    background-color: $superficie;
+    padding: $espacio * 3;
+    border-radius: $radio;
+    h3{
+        margin-bottom: 8px;
+    }
+    p{
+        margin-bottom: 0;
+    }
+    &__imagen{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 160px;
+        font-size: 48px;
+        font-weight: bold;
+        background-color: $fondo;
+        border-radius: $radio;
+    }
+    &--destacado{
+        border: 2px solid $acento;
+    }
+    &:hover{
+        box-shadow: 0 6px 20px rgba(0, 0, 0, .3);
+    }
+}
+.genero{
+    font-size: 13px;
+    font-weight: bold;
+}
