@@ -1,3 +1,10 @@
+.aviso--importante, .aviso--exito, .aviso--info {
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -53,7 +60,7 @@ body {
   min-height: 420px;
 }
 .portada h1 {
-  font-size: 64px;
+  font-size: 4rem;
   margin: 20px 0;
 }
 .portada h1 span {
@@ -66,12 +73,23 @@ body {
 
 .boton {
   display: inline-block;
-  padding: 16px 24px;
-  border-radius: 16px;
-  background-color: #d7ff4b;
-  color: #101321;
   font-weight: bold;
   text-decoration: none;
+  background-color: #d7ff4b;
+  color: #101321;
+  padding: 16px 24px;
+  border: 0;
+  border-radius: 16px;
+}
+.boton--principal {
+  background-color: #ff6b91;
+  color: #101321;
+  padding: 16px 24px;
+  border: 0;
+  border-radius: 16px;
+}
+.boton:hover {
+  filter: brightness(0.9);
 }
 
 .seccion {
@@ -79,13 +97,15 @@ body {
 }
 
 .pie {
-  background-color: #1d2235;
+  background-color: #101321;
+  color: #f7f7fb;
   text-align: center;
   padding: 24px;
 }
 
 .seccion h2 {
   margin-top: 0;
+  font-size: 2rem;
 }
 
 .artistas {
@@ -101,6 +121,7 @@ body {
 }
 .artista h3 {
   margin-bottom: 8px;
+  font-size: 1.25rem;
 }
 .artista p {
   margin-bottom: 0;
@@ -125,4 +146,94 @@ body {
 .genero {
   font-size: 13px;
   font-weight: bold;
+}
+
+.genero--electronica {
+  color: #d7ff4b;
+}
+
+.genero--rock {
+  color: #ff6b91;
+}
+
+.genero--pop {
+  color: #8dc8ff;
+}
+
+.entradas {
+  background: #1d2235;
+}
+.entradas__lista {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.entrada {
+  background: #101321;
+  padding: 32px;
+  border-radius: 16px;
+}
+.entrada__precio {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ff6b91;
+}
+.entrada--vip {
+  border: 2px solid #ff6b91;
+}
+
+.aviso--info {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.aviso--exito {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.aviso--importante {
+  background-color: #ffe4e6;
+  color: #9f1239;
+}
+
+.espacio-1 {
+  margin-top: 8px;
+}
+
+.espacio-2 {
+  margin-top: 16px;
+}
+
+.espacio-3 {
+  margin-top: 24px;
+}
+
+.espacio-4 {
+  margin-top: 32px;
+}
+
+@media (max-width: 760px) {
+  .cabecera__interior {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .portada {
+    padding: 48px 0;
+    min-height: auto;
+  }
+  .portada h1 {
+    font-size: 40px;
+  }
+  .artistas {
+    grid-template-columns: 1fr;
+  }
+  .entradas__lista {
+    grid-template-columns: 1fr;
+  }
 }/*# sourceMappingURL=estilos.css.map */

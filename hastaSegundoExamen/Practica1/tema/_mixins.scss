@@ -1,0 +1,29 @@
+@use "variables" as v;
+
+@mixin boton-estilo($fondo, $texto: v.$fondo){
+    background-color: $fondo;
+    color: $texto;
+    padding: 16px 24px;
+    border: 0;
+    border-radius: v.$radio;
+}
+
+@mixin centrar-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin aspecto($modo){
+    @if $modo==oscuro{
+        background-color: v.$fondo;
+        color: v.$texto;
+    }@else if $modo==claro{
+        background-color: white;
+        color:v.$fondo;
+    }@else{
+        @warn "modo desconocido";
+        background-color: v.$superficie;
+        color: v.$texto;
+    }
+}
